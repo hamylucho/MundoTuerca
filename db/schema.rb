@@ -19,21 +19,6 @@ ActiveRecord::Schema.define(version: 20151122090141) do
     t.datetime "updated_at"
   end
 
-  create_table "recomendaciones", force: true do |t|
-    t.string   "tipo_recomendacion"
-    t.string   "nombre_taller"
-    t.string   "direccion"
-    t.string   "comuna"
-    t.string   "ciudad"
-    t.string   "comentario"
-    t.string   "calificacion"
-    t.integer  "usuario_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "recomendaciones", ["usuario_id"], name: "index_recomendaciones_on_usuario_id"
-
   create_table "recomendacions", force: true do |t|
     t.string   "tipo"
     t.string   "taller"
